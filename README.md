@@ -56,7 +56,8 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 Your readme will have various images and gifs on it. Upload a test image and test gif to make sure you've got the process figured out. Pick whatever image and gif you want!
 
 ### Test Link
-
+[Link emaple](https://www.google.com/search?q=arthur+gif&tbm=isch&ved=2ahUKEwi0vOGJj_T5AhWNYDUKHWk6CogQ2-cCegQIABAA&oq=arthur+gif&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAELEDEEM6CggAELEDEIMBEEM6CwgAEIAEELEDEIMBOggIABCABBCxAzoICAAQsQMQgwE6BAgAEENQnAVY3g1g6hFoAHAAeACAASyIAcEBkgEBNZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=v-sQY_TgFI3B1QHp9KjACA&bih=969&biw=1920&rlz=1C1GCEU_enUS1020US1020#imgrc=9REL6WGEGSGHXM)
 ### Test Image
-
+![Arthur](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/Arthur.png)  
 ### Test GIF
+![Picture Name Here](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/arthur-dancing.gif) 
