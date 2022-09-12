@@ -8,15 +8,16 @@
 
 &nbsp;
 
-## Raspberry_Pi_Assignment_Template
+## LaunchPad Part 1(Countdo
 
 ### Assignment Description
 
-Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+The purpose of this assignment is to create a countdown on a serial monitor starting at 10 to 0 or liftoff. 
 
 ### Evidence 
 
-Pictures / Gifs of your work should go here. You need to communicate what your thing does. 
+ ![Gif of the Countdown](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/launchpadpt1.gif) 
+ Credit to Josie for letting me use her video, mine was way too long 
 
 ### Wiring
 
