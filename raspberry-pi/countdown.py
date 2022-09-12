@@ -17,10 +17,10 @@ while True:
          print("Liftoff!")
          led1.value = True
          time.sleep(1)
-     else: 
+        else: 
          print(x)
          time.sleep(1)
          led2.value = True
-         time.sleep(.2)
+         time.sleep(1)
          led2.value = False
-         time.sleep(.2)
+         time.sleep(1)
