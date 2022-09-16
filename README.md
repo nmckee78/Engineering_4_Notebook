@@ -3,12 +3,12 @@
 &nbsp;
 
 ## Table of Contents
-* [Raspberry_Pi_Assignment_Template](#raspberry_pi_assignment_template)
+* [Launchpad Part 1](#launchpad_part_1)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
 
-## LaunchPad Part 1(Countdo
+## LaunchPad Part 1
 
 ### Assignment Description
 
@@ -24,11 +24,11 @@ The purpose of this assignment is to create a countdown on a serial monitor star
 This may not be applicable to all assignments. Anything where you wire something up, include the wiring diagram here. The diagram should be clear enough that I can recreate the wiring from scratch. 
 
 ### Code
-Give me a link to your code. [Something like this](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). Don't make me hunt through your folders, give me a nice link to click to take me there! Remember to **COMMENT YOUR CODE** if you want full credit. 
+[Something like this](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). 
 
 ### Reflection
 
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+The only thing I really found challenging was figuring out x in range part, specifically figuring out that the end variable needs to be at -1 and not 0 because while the countdown stops at 0 for whatever reason the command will stop at the next number(-1) even though 0 will be the last number it prints I figured this out by simple trial and error. The only other thing that was slightly difficult was the fact that the value for when x reaches 0 and you need to print liftoff you have to write x==0 instead of just one = for some reason and I assume this is the same for all values like it using x and a number. This was the first code assignment I did this year so I was a little rusty but this was a pretty simple assignment that could basically just be figured out using logic.
 
 &nbsp;
 
