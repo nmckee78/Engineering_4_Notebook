@@ -8,11 +8,35 @@
 
 &nbsp;
 
-## LaunchPad Part 1
+## LaunchPad_Part_1
 
 ### Assignment Description
 
 The purpose of this assignment is to create a countdown on a serial monitor starting at 10 to 0 or liftoff. 
+
+### Evidence 
+
+ ![Gif of the Countdown](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/launchpadpt1.gif) 
+ #### Credit to Josie for letting me use her video, mine was way too long 
+
+### Wiring
+
+This may not be applicable to all assignments. Anything where you wire something up, include the wiring diagram here. The diagram should be clear enough that I can recreate the wiring from scratch. 
+
+### Code
+[Code for the Launchpad](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). 
+
+### Reflection
+
+The only thing I really found challenging was figuring out x in range part, specifically figuring out that the end variable needs to be at -1 and not 0 because while the countdown stops at 0 for whatever reason the command will stop at the next number(-1) even though 0 will be the last number it prints I figured this out by simple trial and error. The only other thing that was slightly difficult was the fact that the value for when x reaches 0 and you need to print liftoff you have to write x==0 instead of just one = for some reason and I assume this is the same for all values like it using x and a number. This was the first code assignment I did this year so I was a little rusty but this was a pretty simple assignment that could basically just be figured out using logic.
+
+&nbsp;
+
+## LaunchPad_Part_2
+
+### Assignment Description
+
+The purpose of this assignment is to blink a red light every second as the countdown goes down then blink a green light when it reaches 0.
 
 ### Evidence 
 
@@ -24,14 +48,13 @@ The purpose of this assignment is to create a countdown on a serial monitor star
 This may not be applicable to all assignments. Anything where you wire something up, include the wiring diagram here. The diagram should be clear enough that I can recreate the wiring from scratch. 
 
 ### Code
-[Something like this](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). 
+[Code for the Launchpad](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). 
 
 ### Reflection
 
 The only thing I really found challenging was figuring out x in range part, specifically figuring out that the end variable needs to be at -1 and not 0 because while the countdown stops at 0 for whatever reason the command will stop at the next number(-1) even though 0 will be the last number it prints I figured this out by simple trial and error. The only other thing that was slightly difficult was the fact that the value for when x reaches 0 and you need to print liftoff you have to write x==0 instead of just one = for some reason and I assume this is the same for all values like it using x and a number. This was the first code assignment I did this year so I was a little rusty but this was a pretty simple assignment that could basically just be figured out using logic.
 
 &nbsp;
-
 ## Onshape_Assignment_Template
 
 ### Assignment Description
