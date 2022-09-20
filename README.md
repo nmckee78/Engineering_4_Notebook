@@ -5,6 +5,9 @@
 ## Table of Contents
 * [Launchpad Part 1](#launchpad_part_1)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
+* [Launchpad Part 2](#launchpad_part_2)
+* [Launchpad Part 3](#launchpad_part_3)
+* [Launchpad Part 4](#launchpad_part_4)
 
 &nbsp;
 
@@ -24,7 +27,7 @@ The purpose of this assignment is to create a countdown on a serial monitor star
 This may not be applicable to all assignments. Anything where you wire something up, include the wiring diagram here. The diagram should be clear enough that I can recreate the wiring from scratch. 
 
 ### Code
-[Code for the Launchpad](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). 
+[Code for the countdown](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). 
 
 ### Reflection
 
@@ -40,21 +43,65 @@ The purpose of this assignment is to blink a red light every second as the count
 
 ### Evidence 
 
- ![Gif of the Countdown](https://github.com/jmuss07/Engineering_4_Notebook/blob/main/images/launchpadpt1.gif) 
- Credit to Josie for letting me use her video, mine was way too long 
+ ![Gif of the Countdown & Lights](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/countdownp2.gif) 
 
 ### Wiring
 
-This may not be applicable to all assignments. Anything where you wire something up, include the wiring diagram here. The diagram should be clear enough that I can recreate the wiring from scratch. 
+![Wiring for the lights](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/wiringcountdownp2.jpg)
 
 ### Code
-[Code for the Launchpad](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). 
+[Code for the countdown & lights](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/countdown2.py). 
 
 ### Reflection
 
-The only thing I really found challenging was figuring out x in range part, specifically figuring out that the end variable needs to be at -1 and not 0 because while the countdown stops at 0 for whatever reason the command will stop at the next number(-1) even though 0 will be the last number it prints I figured this out by simple trial and error. The only other thing that was slightly difficult was the fact that the value for when x reaches 0 and you need to print liftoff you have to write x==0 instead of just one = for some reason and I assume this is the same for all values like it using x and a number. This was the first code assignment I did this year so I was a little rusty but this was a pretty simple assignment that could basically just be figured out using logic.
+This part was fairly simple as it was really just making lights blink corresponding to the numbers they should blink on. So you could just insert the code for making the lights blink into your existing code with out having to change the overall structure of the code at all. The only issues I had was with getting the wiring to work and making sure everything was in the pins I had defined in the code.
 
 &nbsp;
+
+## LaunchPad_Part_3
+
+### Assignment Description
+
+The purpose of this assignment is to have a button that when pressed, will start the countdown
+
+### Evidence 
+
+ ![Gif of the Countdown with button](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/countdownp3.gif) 
+
+### Wiring
+
+![Wiring for the lights & button](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/wiringcountdownp3.jpg)
+
+### Code
+[Code for the countdown with button](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/countdown3). 
+
+### Reflection
+
+This part was pretty quick as the only things you had to add to the code was the if button.value == false and defining the button with the right pin. The only thing that was really confusing was that you need the button value to be false for it to work, not true. This is because the button pull is up and not down because it means that when the button is not pressed(pulled up) the value equals true and when the button is pressed(pulled down) the value equals false, which is what we want. The wiring was also very simple with just wire going from the button to ground and the other going to whatever you pin you pair the button with in the code. 
+
+&nbsp;
+
+## LaunchPad_Part_4
+
+### Assignment Description
+
+The purpose of this assignment is to add a servo that will spin 180 degrees on liftoff.
+
+### Evidence 
+
+ ![Gif of the Countdown with servo](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/countdownp4.gif) 
+
+### Wiring
+
+![Wiring for the lights, button and servo](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/wiringcountdownp4.jpg)
+
+### Code
+[Code for the countdown with button](https://github.com/nmckee78/Engineering_4_Notebook/edit/main/raspberry-pi/countdown.py). 
+
+### Reflection
+
+This part was pretty easy as all you have to do is import the libraries and the servo code, then tell it to spin 180 degrees when it reaches 0. The only problems I had was for some reason it wouldn't work unless I told it to spin 0 degrees under the else function. I'm pretty sure this would reset the servo and without the reset it wouldn't work. Also, I had a little trouble finding the right wiring but once I found it, it's pretty simple.
+
 ## Onshape_Assignment_Template
 
 ### Assignment Description
