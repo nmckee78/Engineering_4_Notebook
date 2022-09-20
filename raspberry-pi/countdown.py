@@ -10,6 +10,8 @@ led1.direction = digitalio.Direction.OUTPUT
 led2.direction = digitalio.Direction.OUTPUT
 button = digitalio.DigitalInOut(board.GP22)
 button.pull = digitalio.Pull.UP
+pwm_servo = pwmio.PWMOut(board.GP6, duty_cycle=2 ** 15, frequency=50)
+servo1 = servo.Servo(pwm_servo, min_pulse=500, max_pulse=2500)
 
 while True:
     if button.value == False: # When the button is pressed, this starts the countdown
@@ -18,7 +20,9 @@ while True:
          print("Liftoff!") # The terminal will print liftoff instead of x like the other numbers
          led1.value = True # This turns the Green light on(led1)
          time.sleep(1) 
+         servo1.angle = 180 # This spins the servo 180 degrees when the countdown reaches liftoff
         else: 
+         servo1.angle = 0 # This is necessary for it to work, without it, it won't spin at the end
          led1.value = False # This tells the green light to be off
          print(x) # This will make it print whatever variable it's on
          time.sleep(1) # This will make the numbers print every second
