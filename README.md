@@ -8,6 +8,7 @@
 * [Launchpad Part 2](#launchpad_part_2)
 * [Launchpad Part 3](#launchpad_part_3)
 * [Launchpad Part 4](#launchpad_part_4)
+* [Crash Avoidance Part 1](#Crash_avoidance_part_1)
 
 &nbsp;
 
@@ -97,6 +98,29 @@ The purpose of this assignment is to add a servo that will spin 180 degrees on l
 
 ### Code
 [Code for the countdown with button](https://github.com/nmckee78/Engineering_4_Notebook/edit/main/raspberry-pi/countdown.py). 
+
+### Reflection
+
+This part was pretty easy as all you have to do is import the libraries and the servo code, then tell it to spin 180 degrees when it reaches 0. The only problems I had was for some reason it wouldn't work unless I told it to spin 0 degrees under the else function. I'm pretty sure this would reset the servo and without the reset it wouldn't work. Also, I had a little trouble finding the right wiring but once I found it, it's pretty simple.
+
+&nbsp;
+
+## Crash_avoidance_part_1
+
+### Assignment Description
+
+The purpose of this assignment is to have an acceleromater that continously reports x, y, and z acceleration values on the serial monitor.  
+
+### Evidence 
+
+ ![Gif of the acceleration values](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/crashavoidance1.gif) 
+
+### Wiring
+
+![Wiring for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/wiringcrashavoidance1.jpg)
+
+### Code
+[Code for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/crashavoidance1). 
 
 ### Reflection
 
