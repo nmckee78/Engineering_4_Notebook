@@ -124,7 +124,7 @@ The purpose of this assignment is to have an acceleromater that continously repo
 
 ### Reflection
 
-This part was pretty easy as all you have to do is import the libraries and the servo code, then tell it to spin 180 degrees when it reaches 0. The only problems I had was for some reason it wouldn't work unless I told it to spin 0 degrees under the else function. I'm pretty sure this would reset the servo and without the reset it wouldn't work. Also, I had a little trouble finding the right wiring but once I found it, it's pretty simple.
+The wiring for this was really easy as it's just a ground pin, a vin pin and then the sda and sdl pins. I struggled a lot more with the code and trying to figure out how to use the accelerometer with f strings. Even though the actual code is really only a few lines I had to figure out how to properly define the f string so it would display correctly in the terminal while still running the accelerometer code inside the f string. Once I figured out that you can just define what your gonna display and then put the code for the accelerometer to find the x, y, and z values inside that. This was really the only issue as the code and wiring is relatively short and simple.
 
 ## Onshape_Assignment_Template
 
