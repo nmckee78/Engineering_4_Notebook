@@ -1,20 +1,14 @@
 import adafruit_mpu6050 
 import busio
 import board
-import digitalio
 import time
 
 sda_pin = board.GP14 # These define the sda and scl pin
 scl_pin = board.GP15
 i2c = busio.I2C(scl_pin, sda_pin) # This groups the scl and sda pin into the busio 
 mpu = adafruit_mpu6050.MPU6050(i2c) # This is for the accelerometer
-led = digitalio.DigitalInOut(board.GP13)
-led.direction = digitalio.Direction.OUTPUT
 
 
 while True:
-    if mpu.acceleration[2] == 0:
-        led.value = True
-        time.sleep(0.2)
     print(f"x  acceleration: {mpu.acceleration[0]}, y acceleration: {mpu.acceleration[1]}, z acceleration: {mpu.acceleration[2]}.") # This is an f string that basically tells the terminal to print the acceleration for x which uses 0 and then the same for y and z(1 and 2)
     time.sleep(0.2)
