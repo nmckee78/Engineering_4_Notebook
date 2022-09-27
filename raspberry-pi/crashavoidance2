@@ -13,8 +13,11 @@ led.direction = digitalio.Direction.OUTPUT
 
 
 while True:
-    if mpu.acceleration[2] == 0:
+    if mpu.acceleration[0] > 9 or mpu.acceleration[0] < -9:
         led.value = True
-        time.sleep(0.2)
+    elif mpu.acceleration[1] > 9 or mpu.acceleration[1] < -9:
+        led.value = True
+    else:
+        led.value = False
     print(f"x  acceleration: {mpu.acceleration[0]}, y acceleration: {mpu.acceleration[1]}, z acceleration: {mpu.acceleration[2]}.") # This is an f string that basically tells the terminal to print the acceleration for x which uses 0 and then the same for y and z(1 and 2)
     time.sleep(0.2)
