@@ -4,12 +4,13 @@
 
 ## Table of Contents
 * [Launchpad Part 1](#launchpad_part_1)
-* [Onshape_Assignment_Template](#onshape_assignment_template)
 * [Launchpad Part 2](#launchpad_part_2)
 * [Launchpad Part 3](#launchpad_part_3)
 * [Launchpad Part 4](#launchpad_part_4)
 * [Crash Avoidance Part 1](#Crash_avoidance_part_1)
 * [Crash Avoidance Part 2](#Crash_avoidance_part_2)
+* [Crash Avoidance Part 2](#Crash_avoidance_part_2)
+* [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
 
@@ -146,6 +147,29 @@ The purpose of this assignment is to have an led turn on when the accelerometer 
 
 ### Code
 [Code for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/crashavoidance2). 
+
+### Reflection
+
+The only new wiring that was needed for this assignment was just wiring a single led. To make the led turn on when the accelerometer is tilted more than 90 degrees you need to tell the code to turn the light on when the x value or y value is over 9 or under -9 as these are the values that represent about 90 degrees. The code for this is relatively straight forward as you just establish an if, elif and else statement where the if and elif are for the x and y values over 9, telling the led value to become true and the else function turning the light off which it'll be whenever it isn't over or under those values. Overall once you figure out how to properly set up the if, elif and else function pretty straightforward.
+
+&nbsp;
+
+## Crash_avoidance_part_3
+
+### Assignment Description
+
+The purpose of this assignment is to have an OLED screen print the accelerometer values instead of the terminal on the computer as well as the accelerometer being mobile and not attached to the computer.
+
+### Evidence 
+
+ ![Gif of the acceleration values](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/crashavoidance3.gif) 
+
+### Wiring
+
+![Wiring for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/wiringcrashavoidance3.jpg)
+
+### Code
+[Code for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/crashavoidance3). 
 
 ### Reflection
 
