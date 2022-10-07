@@ -1,0 +1,24 @@
+def tri_area(x1y1, x2y2, x3y3):
+    try: 
+      x1y1 = "x1,y1"
+      x = x1y1.split()
+      print(x)
+      x2y2 = "x2,y2"
+      x = x2y2.split()
+      print(x)
+      x3y3 = "x3,y3"
+      x = x3y3.split()
+      print(x)
+      area = (1/2(x1(y2-y3)+x2(y3-y1)+x3(y1-y2)))
+while True: 
+    val1 = input('x1, y1')
+    val2 = input('x2, y2')
+    val3 = input('x3, y3')
+    area = tri_area(val1, val2, val3)
+    if area == 0:
+        continue
+    else:
+      print(1/2(x1(y2-y3)+x2(y3-y1)+x3(y1-y2)))
+
+
+    
