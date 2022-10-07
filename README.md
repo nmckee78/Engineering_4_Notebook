@@ -4,11 +4,13 @@
 
 ## Table of Contents
 * [Launchpad Part 1](#launchpad_part_1)
-* [Onshape_Assignment_Template](#onshape_assignment_template)
 * [Launchpad Part 2](#launchpad_part_2)
 * [Launchpad Part 3](#launchpad_part_3)
 * [Launchpad Part 4](#launchpad_part_4)
 * [Crash Avoidance Part 1](#Crash_avoidance_part_1)
+* [Crash Avoidance Part 2](#Crash_avoidance_part_2)
+* [Crash Avoidance Part 3](#Crash_avoidance_part_3)
+* [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
 
@@ -109,22 +111,71 @@ This part was pretty easy as all you have to do is import the libraries and the 
 
 ### Assignment Description
 
-The purpose of this assignment is to have an acceleromater that continously reports x, y, and z acceleration values on the serial monitor.  
+The purpose of this assignment is to have an accelerometer that continously reports x, y, and z acceleration values on the serial monitor.  
 
 ### Evidence 
 
  ![Gif of the acceleration values](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/crashavoidance1.gif) 
-
+ 
 ### Wiring
 
 ![Wiring for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/wiringcrashavoidance1.jpg)
 
 ### Code
+
 [Code for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/crashavoidance1). 
 
 ### Reflection
 
 The wiring for this was really easy as it's just a ground pin, a vin pin and then the sda and sdl pins. I struggled a lot more with the code and trying to figure out how to use the accelerometer with f strings. Even though the actual code is really only a few lines I had to figure out how to properly define the f string so it would display correctly in the terminal while still running the accelerometer code inside the f string. Once I figured out that you can just define what your gonna display and then put the code for the accelerometer to find the x, y, and z values inside that. This was really the only issue as the code and wiring is relatively short and simple.
+
+&nbsp;
+
+## Crash_avoidance_part_2
+
+### Assignment Description
+
+The purpose of this assignment is to have an led turn on when the accelerometer is turned more than 90 degrees. 
+
+### Evidence 
+
+ ![Gif of the acceleration values](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/crashavoidance2.gif) 
+
+### Wiring
+
+![Wiring for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/wiringcrashavoidance2.jpg)
+
+### Code
+[Code for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/crashavoidance2). 
+
+### Reflection
+
+The only new wiring that was needed for this assignment was just wiring a single led. To make the led turn on when the accelerometer is tilted more than 90 degrees you need to tell the code to turn the light on when the x value or y value is over 9 or under -9 as these are the values that represent about 90 degrees. The code for this is relatively straight forward as you just establish an if, elif and else statement where the if and elif are for the x and y values over 9, telling the led value to become true and the else function turning the light off which it'll be whenever it isn't over or under those values. Overall once you figure out how to properly set up the if, elif and else function pretty straightforward.
+
+&nbsp;
+
+## Crash_avoidance_part_3
+
+### Assignment Description
+
+The purpose of this assignment is to have an OLED screen print the accelerometer values instead of the terminal on the computer as well as the accelerometer being mobile and not attached to the computer.
+
+### Evidence 
+
+ ![Gif of the acceleration values](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/crashavoidance3.gif) 
+
+### Wiring
+
+![Wiring for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/wiringcrashavoidance3.jpg)
+
+### Code
+[Code for the accelerometer](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/crashavoidance3). 
+
+### Reflection
+
+The only new wiring that was needed for this assignment was just wiring a single led. To make the led turn on when the accelerometer is tilted more than 90 degrees you need to tell the code to turn the light on when the x value or y value is over 9 or under -9 as these are the values that represent about 90 degrees. The code for this is relatively straight forward as you just establish an if, elif and else statement where the if and elif are for the x and y values over 9, telling the led value to become true and the else function turning the light off which it'll be whenever it isn't over or under those values. Overall once you figure out how to properly set up the if, elif and else function pretty straightforward.
+
+&nbsp;
 
 ## Onshape_Assignment_Template
 
