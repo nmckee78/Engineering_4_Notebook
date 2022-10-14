@@ -1,24 +1,30 @@
 def tri_area(x1y1, x2y2, x3y3):
-    try: 
-      x1y1 = "x1,y1"
-      x = x1y1.split()
-      print(x)
-      x2y2 = "x2,y2"
-      x = x2y2.split()
-      print(x)
-      x3y3 = "x3,y3"
-      x = x3y3.split()
-      print(x)
-      area = (1/2(x1(y2-y3)+x2(y3-y1)+x3(y1-y2)))
-while True: 
-    val1 = input('x1, y1')
-    val2 = input('x2, y2')
-    val3 = input('x3, y3')
-    area = tri_area(val1, val2, val3)
-    if area == 0:
-        continue
+    try:
+      Ax = float(x1y1[0]) 
+      Ay = float(x1y1[1]) 
+      Bx= float(x2y2[0])
+      By = float(x2y2[1])
+      Cx = float(x3y3[0])
+      Cy = float(x3y3[1])
+      area = abs(Ax*(By-Cy) + Bx*(Cy - Ay) + Cx*(Ay - By))/2 
+      print(f"\nThe area of the triangle with the coordinates ({Ax},{Ay}), ({Bx},{By}), ({Cx},{Cy}) is {area} km squared")
+      return area
+    except: 
+        print("\nThese values don't work, please type in new ones")
+cont = False 
+while not cont:
+    start = input("\nType 'start' to begin, or type -q to quit: ").lower() 
+    if start == "-q": 
+        cont = True 
     else:
-      print(1/2(x1(y2-y3)+x2(y3-y1)+x3(y1-y2)))
+        coord_1 = input("\nInput first coordinate in format x,y: ") 
+        x1y1 = coord_1.split(",") 
 
+        coord_2 = input("\nInput second coordinate in format x,y: ") 
+        x2y2 = coord_2.split(",") 
+
+        coord_3 = input("\nInput third coordinate in format x,y: ") 
+        x3y3 = coord_3.split(",")  
+        tri_area(x1y1, x2y2, x3y3) 
 
     
