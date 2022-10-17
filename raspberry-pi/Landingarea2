@@ -1,3 +1,21 @@
+import board
+import time
+from adafruit_display_shapes.triangle import Triangle
+from adafruit_display_shapes.line import Line
+from adafruit_display_shapes.circle import Circle
+import busio
+import displayio
+import terminalio
+import adafruit_displayio_ssd1306
+from adafruit_display_text import label
+displayio.release_displays()
+
+sda_pin = board.GP16
+scl_pin = board.GP17
+i2c = busio.I2C(scl_pin, sda_pin) 
+display_bus = displayio.I2CDisplay(i2c, device_address = 0x3d, reset = board.GP15) 
+display = adafruit_displayio_ssd1306.SSD1306(display_bus, width=128, height=64)
+
 def tri_area(x1y1, x2y2, x3y3):
     try:
       Ax = float(x1y1[0]) 
@@ -7,7 +25,20 @@ def tri_area(x1y1, x2y2, x3y3):
       Cx = float(x3y3[0])
       Cy = float(x3y3[1])
       area = abs(Ax*(By-Cy) + Bx*(Cy - Ay) + Cx*(Ay - By))/2 
+      splash = displayio.Group()
       print(f"\nThe area of the triangle with the coordinates ({Ax},{Ay}), ({Bx},{By}), ({Cx},{Cy}) is {area} km squared")
+      hline = Line(0,32,128,32, color=0xFFFF00) 
+      splash.append(hline)
+      hline = Line(0,32,128,32, color=0xFFFF00) 
+      splash.append(hline) 
+      vline = Line(64,64,64,0, color=0xFFFF00) 
+      splash.append(vline) 
+      triangle = Triangle(int(Ax+64), int(-Ay+32), int(Bx+64), int(-By+32), int(Cx+64), int(-Cy+32), outline=0xFFFF00) 
+      splash.append(triangle)
+      title = f"Area: {area}" 
+      text_area = label.Label(terminalio.FONT, text = title, color = 0xFFFF00, x = 5, y= 5)
+      splash.append(text_area) 
+      display.show(splash) 
       return area
     except: 
         print("\nThese values don't work, please type in new ones")
