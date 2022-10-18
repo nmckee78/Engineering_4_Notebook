@@ -24,14 +24,14 @@ dash_time = 3*modifier
 between_taps = 1*modifier
 between_letters = 3*modifier
 between_words = 7*modifier
-led = digitalio.DigitalInOut(board.LED)
+led = digitalio.DigitalInOut(board.GP18)
 led.direction = digitalio.Direction.OUTPUT 
 led.value = False
 
 morse = ' '
 cont = False 
 while not cont:
-    phrase = input("\nEnter morse code prhase, or type -q to quit: ").upper()
+    phrase = input("\nEnter morse code phrase, or type -q to quit: ").upper()
     if phrase == "-Q":
         cont = True
     else:
@@ -41,18 +41,18 @@ while not cont:
             morse += ' ' 
         print(morse)
         for i in morse:
-                if i == "-":
-                    led.value = True
-                    time.sleep(dash_time)
-                    led.value = False
-                if i ==".":
-                    led.value= True
-                    time.sleep(dot_time)
-                    led.value = False
-                if i == " ":
-                    led.value = True
-                    time.sleep(between_letters)
-                if i == "/":
-                    led.value = False
-                    time.sleep(between_words)
-                time.sleep(between_taps)
+            if i == "-":
+                led.value = True
+                time.sleep(dash_time)
+                led.value = False
+            if i ==".":
+                led.value= True
+                time.sleep(dot_time)
+                led.value = False
+            if i == " ":
+                led.value = True
+                time.sleep(between_letters)
+            if i == "/":
+                led.value = False
+                time.sleep(between_words)
+            time.sleep(between_taps)
