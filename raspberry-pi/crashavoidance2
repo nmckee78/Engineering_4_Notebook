@@ -8,16 +8,16 @@ sda_pin = board.GP14 # These define the sda and scl pin
 scl_pin = board.GP15
 i2c = busio.I2C(scl_pin, sda_pin) # This groups the scl and sda pin into the busio 
 mpu = adafruit_mpu6050.MPU6050(i2c) # This is for the accelerometer
-led = digitalio.DigitalInOut(board.GP13)
-led.direction = digitalio.Direction.OUTPUT
+led = digitalio.DigitalInOut(board.GP13)# This tells the board which pin the led is going to use
+led.direction = digitalio.Direction.OUTPUT # This defines whether the led being true means it's on or off. If it's output true means it's on, if it's input true means it's off
 
 
 while True:
-    if mpu.acceleration[0] > 9 or mpu.acceleration[0] < -9:
+    if mpu.acceleration[0] > 9 or mpu.acceleration[0] < -9: # This will turn on the led when the x value goes over 9 or under -9
         led.value = True
-    elif mpu.acceleration[1] > 9 or mpu.acceleration[1] < -9:
+    elif mpu.acceleration[1] > 9 or mpu.acceleration[1] < -9:# Same thing as above just with the y value
         led.value = True
     else:
-        led.value = False
+        led.value = False # If the values aren't above or below 9 or -9 the led will stay off
     print(f"x  acceleration: {mpu.acceleration[0]}, y acceleration: {mpu.acceleration[1]}, z acceleration: {mpu.acceleration[2]}.") # This is an f string that basically tells the terminal to print the acceleration for x which uses 0 and then the same for y and z(1 and 2)
     time.sleep(0.2)

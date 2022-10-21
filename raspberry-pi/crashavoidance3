@@ -13,32 +13,31 @@ sda_pin = board.GP26 # These define the sda and scl pin
 scl_pin = board.GP27
 i2c = busio.I2C(scl_pin, sda_pin) # This groups the scl and sda pin into the busio 
 mpu = mpu = adafruit_mpu6050.MPU6050(i2c, address=0x68) # This is for the accelerometer
-led = digitalio.DigitalInOut(board.GP13)
-led.direction = digitalio.Direction.OUTPUT
-display_bus = displayio.I2CDisplay(i2c, device_address=0x3d, reset=board.GP16)
-display = adafruit_displayio_ssd1306.SSD1306(display_bus, width=128, height=64)
-splash = displayio.Group()
+led = digitalio.DigitalInOut(board.GP13) # This tells the board which pin the led is going to use
+led.direction = digitalio.Direction.OUTPUT # This defines whether the led being true means it's on or off. If it's output true means it's on, if it's input true means it's off
+display_bus = displayio.I2CDisplay(i2c, device_address=0x3d, reset=board.GP16) # This sets up the display board and defines its reset pin
+display = adafruit_displayio_ssd1306.SSD1306(display_bus, width=128, height=64) # This defines how big the display is
 
 while True:
-    if mpu.acceleration[0] > 9 or mpu.acceleration[0] < -9:
+    if mpu.acceleration[0] > 9 or mpu.acceleration[0] < -9:# This will turn on the led when the x value goes over 9 or under -9
         led.value = True
-    elif mpu.acceleration[1] > 9 or mpu.acceleration[1] < -9:
+    elif mpu.acceleration[1] > 9 or mpu.acceleration[1] < -9:# Same thing as above just with the y value
         led.value = True
     else:
-        led.value = False
-    splash = displayio.Group()
-    title = "ANGULAR VELOCITY"
-    text_area = label.Label(terminalio.FONT, text=title, color=0xFFFF00, x=0, y=5)
+        led.value = False # If the values aren't above or below 9 or -9 the led will stay off
+    splash = displayio.Group() # This groups everything under it into code that will be sent to the display board
+    title = "ANGULAR VELOCITY" # This will be the actual text that shows up on the display
+    text_area = label.Label(terminalio.FONT, text=title, color=0xFFFF00, x=0, y=5) # This defines were the text above will be on the board
+    splash.append(text_area) #This sends it to the board
+    title = f"x  acceleration: {mpu.acceleration[0]}" # This f string will display the x acceleration values on the display
+    text_area = label.Label(terminalio.FONT, text=title, color=0xFFFF00, x=0, y=15) # Same thing as the text_area above, the y is just different so it's further down
     splash.append(text_area)
-    title = f"x  acceleration: {mpu.acceleration[0]}"
-    text_area = label.Label(terminalio.FONT, text=title, color=0xFFFF00, x=0, y=15)
+    title = f"y  acceleration: {mpu.acceleration[1]}" # This f string will display the y acceleration values on the display
+    text_area = label.Label(terminalio.FONT, text=title, color=0xFFFF00, x=0, y=25) # Again, Y is just moved further down
     splash.append(text_area)
-    title = f"y  acceleration: {mpu.acceleration[1]}"
-    text_area = label.Label(terminalio.FONT, text=title, color=0xFFFF00, x=0, y=25)
-    splash.append(text_area)
-    title = f"z  acceleration: {mpu.acceleration[2]}"
+    title = f"z  acceleration: {mpu.acceleration[2]}" # This f string will display the z acceleration values on the display
     text_area = label.Label(terminalio.FONT, text=title, color=0xFFFF00, x=0, y=35)
     splash.append(text_area)
     print(f"x  acceleration: {mpu.acceleration[0]}, y acceleration: {mpu.acceleration[1]}, z acceleration: {mpu.acceleration[2]}.") # This is an f string that basically tells the terminal to print the acceleration for x which uses 0 and then the same for y and z(1 and 2)
     time.sleep(0.2)
-    display.show(splash)
+    display.show(splash) 
