@@ -1,4 +1,4 @@
-import board
+import board # See landing area 1 for the rest of the comments
 import time
 from adafruit_display_shapes.triangle import Triangle
 from adafruit_display_shapes.line import Line
@@ -10,7 +10,7 @@ import adafruit_displayio_ssd1306
 from adafruit_display_text import label
 displayio.release_displays()
 
-sda_pin = board.GP16
+sda_pin = board.GP16 # These set up the oled board
 scl_pin = board.GP17
 i2c = busio.I2C(scl_pin, sda_pin) 
 display_bus = displayio.I2CDisplay(i2c, device_address = 0x3d, reset = board.GP15) 
@@ -25,23 +25,21 @@ def tri_area(x1y1, x2y2, x3y3):
       Cx = float(x3y3[0])
       Cy = float(x3y3[1])
       area = abs(Ax*(By-Cy) + Bx*(Cy - Ay) + Cx*(Ay - By))/2 
-      splash = displayio.Group()
+      splash = displayio.Group() # Starts the display group
       print(f"\nThe area of the triangle with the coordinates ({Ax},{Ay}), ({Bx},{By}), ({Cx},{Cy}) is {area} km squared")
-      hline = Line(0,32,128,32, color=0xFFFF00) 
-      splash.append(hline)
-      hline = Line(0,32,128,32, color=0xFFFF00) 
-      splash.append(hline) 
-      vline = Line(64,64,64,0, color=0xFFFF00) 
+      hline = Line(0,32,128,32, color=0xFFFF00) # This sets the coordinates and the color of the x-axis line
+      splash.append(hline) # This adds it to the display group 
+      vline = Line(64,64,64,0, color=0xFFFF00) # This sets the coordinates and the color of the y-axis line
       splash.append(vline) 
-      triangle = Triangle(int(Ax+64), int(-Ay+32), int(Bx+64), int(-By+32), int(Cx+64), int(-Cy+32), outline=0xFFFF00) 
+      triangle = Triangle(int(Ax+64), int(-Ay+32), int(Bx+64), int(-By+32), int(Cx+64), int(-Cy+32), outline=0xFFFF00) # Sets the coordinates and color for the triangle
       splash.append(triangle)
-      title = f"Area: {area}" 
-      text_area = label.Label(terminalio.FONT, text = title, color = 0xFFFF00, x = 5, y= 5)
+      title = f"Area: {area}" # Adds the area to the display group
+      text_area = label.Label(terminalio.FONT, text = title, color = 0xFFFF00, x = 5, y= 5) # Sets the color and coordinates for the text
       splash.append(text_area) 
-      display.show(splash) 
+      display.show(splash) # Sends the entire display group to the Oled 
       return area
     except: 
-        print("\nThese values don't work, please type in new ones")
+        print("\nThese values don't work, please type in new ones") # If there are any errors in the values it'll send this message
 cont = False 
 while not cont:
     start = input("\nType 'start' to begin, or type -q to quit: ").lower() 

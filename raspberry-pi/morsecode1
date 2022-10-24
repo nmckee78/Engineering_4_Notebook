@@ -18,15 +18,15 @@ MORSE_CODE = { 'A':'.-', 'B':'-...',
     '?':'..--..', '/':'-..-.', '-':'-....-',
     '(':'-.--.', ')':'-.--.-'}
 
-morse = ' '
+morse = ' ' # Starts the string
 cont = False 
 while not cont:
-    phrase = input("\nEnter morse code prhase, or type -q to quit: ").upper()
-    if phrase == "-Q":
+    phrase = input("\nEnter morse code prhase, or type -q to quit: ").upper() # This asks for the input of the morse code phrase
+    if phrase == "-Q": # This will exit the input
         cont = True
-    else:
-        for i in phrase:
-            new_letter = MORSE_CODE[i] 
-            morse += new_letter 
-            morse += ' ' 
+    else: 
+        for i in phrase: 
+            new_letter = MORSE_CODE[i] # This translates each letter into it's morse code equivalent
+            morse += new_letter # Adds the morse code translation to the string
+            morse += ' ' # This adds a space in the string
         print(morse)
