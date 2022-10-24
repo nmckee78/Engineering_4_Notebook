@@ -10,6 +10,7 @@
 * [Crash Avoidance Part 1](#Crash_avoidance_part_1)
 * [Crash Avoidance Part 2](#Crash_avoidance_part_2)
 * [Crash Avoidance Part 3](#Crash_avoidance_part_3)
+* [Landing Area Part 1](#Landing_area_part_1)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -174,6 +175,29 @@ The purpose of this assignment is to have an OLED screen print the accelerometer
 ### Reflection
 
 The only new wiring that was needed for this assignment was just wiring a single led. To make the led turn on when the accelerometer is tilted more than 90 degrees you need to tell the code to turn the light on when the x value or y value is over 9 or under -9 as these are the values that represent about 90 degrees. The code for this is relatively straight forward as you just establish an if, elif and else statement where the if and elif are for the x and y values over 9, telling the led value to become true and the else function turning the light off which it'll be whenever it isn't over or under those values. Overall once you figure out how to properly set up the if, elif and else function pretty straightforward.
+
+&nbsp;
+
+## Landing_area_part_1
+
+### Assignment Description
+
+Provide three coordinates and calculate the area of said coordinates.
+
+### Evidence 
+
+ ![Gif of it in action](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/landingarea1.gif) 
+
+### Wiring
+
+There's no wiring for this assingment
+
+### Code
+[Code for the Landing Area](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/Landingarea1). 
+
+### Reflection
+
+This assingment was a lot more difficult as you had to really understand f strings and had to get the floats and inputs to work. The function, which is how the area is found from the inputs was definitely the harder part as you had to get because you need to define the floats which turn the values from string to actual numbers and then you have to define the area as the area of a triangle and then make the f string for the terminal. The second part which is for the inputs was easier as it's really just plugging in the values you defined in the first part and creating f strings for them and also you have to apply splits so you split a value like x1y1 into x1, y1 or else they won't get seperated and won't be inputted properly.
 
 &nbsp;
 
