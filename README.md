@@ -13,6 +13,7 @@
 * [Landing Area Part 1](#Landing_area_part_1)
 * [Landing Area Part 2](#Landing_area_part_2)
 * [Morse Code Part 1](#Morse_code_part_1)
+* [Morse Code Part 2](#Morse_code_part_2)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
