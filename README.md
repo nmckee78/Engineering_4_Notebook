@@ -31,7 +31,7 @@ The purpose of this assignment is to create a countdown on a serial monitor star
 
 ### Wiring
 
-This may not be applicable to all assignments. Anything where you wire something up, include the wiring diagram here. The diagram should be clear enough that I can recreate the wiring from scratch. 
+No wiring for this assignment. 
 
 ### Code
 [Code for the countdown](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). 
@@ -261,7 +261,7 @@ A led must flash the phrase in morse code.
 
 ### Wiring
 
-There's no wiring for this assignment.
+![Wiring for the assignment](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/morsecodewiring2.jpg)
 
 ### Code
 [Code for the assignment](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/morsecode2). 
