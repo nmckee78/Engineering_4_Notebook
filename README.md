@@ -11,6 +11,8 @@
 * [Crash Avoidance Part 2](#Crash_avoidance_part_2)
 * [Crash Avoidance Part 3](#Crash_avoidance_part_3)
 * [Landing Area Part 1](#Landing_area_part_1)
+* [Landing Area Part 2](#Landing_area_part_2)
+* [Morse Code Part 1](#Morse_code_part_1)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -199,6 +201,73 @@ There's no wiring for this assingment
 
 This assingment was a lot more difficult as you had to really understand f strings and had to get the floats and inputs to work. The function, which is how the area is found from the inputs was definitely the harder part as you had to get because you need to define the floats which turn the values from string to actual numbers and then you have to define the area as the area of a triangle and then make the f string for the terminal. The second part which is for the inputs was easier as it's really just plugging in the values you defined in the first part and creating f strings for them and also you have to apply splits so you split a value like x1y1 into x1, y1 or else they won't get seperated and won't be inputted properly.
 
+&nbsp;
+
+## Landing_area_part_2
+
+### Assignment Description
+
+An OLED screen must plot the triangle and display it's area.
+
+### Evidence 
+
+ ![Gif of the assignment](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/landingarea2.gif) 
+
+### Wiring
+
+![Wiring for the assignment](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/wiringlandingarea2.png)
+
+### Code
+[Code for the assignment](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/Landingarea2). 
+
+### Reflection
+
+This part of the assignment was fairly easy for me as you basically just have to import the OLED code you did in the crash avoidance assignment and plug it in to your code. The only new part was the H-line, V-line and defining the triangle, which was a little tricky to figure out but basically just uses the same system as how you would display words. Other than that you just have to apply the same logic you used in crash avoidance to put the OLED code in the proper spots and you should be fine.
+
+&nbsp;
+
+## Morse_code_part_1
+
+### Assignment Description
+
+Your able to input a word or phrase into the code and it'll return the same word or phrase in morse code.
+
+### Evidence 
+
+ ![Gif of the assignment](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/morsecode1.gif) 
+
+### Wiring
+
+There's no wiring for this assignment.
+
+### Code
+[Code for the assignment](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/morsecode1). 
+
+### Reflection
+
+This assignment was relatively simple because the code is very short and simple. You have to import the morse code library and then all you really have to do is create a string and ask for an input of the phrase your going to use. For the actual translation process you just need a few lines of code which just translate each letter into the morse code equivalent then a line to add it to the string and then a final one to add a space in the string.
+&nbsp;
+
+## Morse_code_part_2
+
+### Assignment Description
+
+A led must flash the phrase in morse code. 
+
+### Evidence 
+
+ ![Gif of the assignment](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/morsecode2.gif) 
+
+### Wiring
+
+There's no wiring for this assignment.
+
+### Code
+[Code for the assignment](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/raspberry-pi/morsecode2). 
+
+### Reflection
+
+This assignment was more complicated than the first but it still is a relatively small and simple amount of code. You have to import a bunch of modifiers to help you define the time sleeps inbetween the blinks on the led. In the actual code, you just have to define how long the time sleeps are for each different type of morse code, which should be pretty simple as you already have the modifiers for all of them. 
 &nbsp;
 
 ## Onshape_Assignment_Template
