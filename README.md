@@ -15,7 +15,7 @@
 * [Morse Code Part 1](#Morse_code_part_1)
 * [Morse Code Part 2](#Morse_code_part_2)
 * [Beam Part 1](#Beam_part_1)
-* [Beam](#Beam_part_2)
+* [Beam Part 2](#Beam_part_2)
 
 &nbsp;
 
