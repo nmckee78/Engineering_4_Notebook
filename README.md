@@ -14,7 +14,7 @@
 * [Landing Area Part 2](#Landing_area_part_2)
 * [Morse Code Part 1](#Morse_code_part_1)
 * [Morse Code Part 2](#Morse_code_part_2)
-* [Onshape_Assignment_Template](#onshape_assignment_template)
+* [Beam](#Beam)
 
 &nbsp;
 
@@ -271,7 +271,7 @@ A led must flash the phrase in morse code.
 This assignment was more complicated than the first but it still is a relatively small and simple amount of code. You have to import a bunch of modifiers to help you define the time sleeps inbetween the blinks on the led. In the actual code, you just have to define how long the time sleeps are for each different type of morse code, which should be pretty simple as you already have the modifiers for all of them. 
 &nbsp;
 
-## Onshape_Assignment_Template
+## Beam
 
 ### Assignment Description
 
