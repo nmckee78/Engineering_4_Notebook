@@ -275,19 +275,19 @@ This assignment was more complicated than the first but it still is a relatively
 
 ### Assignment Description
 
-Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+Make a beam and see how much weight it can support before it bends beyond a certain point or snaps.
 
 ### Part Link 
 
-[Create a link to your Onshape document](https://cvilleschools.onshape.com/documents/003e413cee57f7ccccaa15c2/w/ea71050bb283bf3bf088c96c/e/c85ae532263d3b551e1795d0?renderMode=0&uiState=62d9b9d7883c4f335ec42021). Don't forget to turn on link sharing in your Onshape document so that others can see it. 
+[link to the beam in onshape](https://cvilleschools.onshape.com/documents/33575ab88dc8f7928befb042/w/38921909f117f23a72e1cbeb/e/b1f9443dbe8499829a3eab5c?renderMode=0&uiState=6373dab89a584e328ce74f06). 
 
 ### Part Image
 
-Take a nice screenshot of your Onshape document. 
+![Picture of the Beam](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/Beam%20screenshot.PNG) 
 
 ### Reflection
 
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+We decided on making a modified I beam with a large supporting bottom beam and small, thick tab on the top. We also created further support around the whole that supports the weight so it doesn't snap there, which was one of the main stress points on the simulation. We then continued to strengthen the top by cutting out holes in strong points so we could get the weight down to where it needed to be. 
 
 &nbsp;
 
