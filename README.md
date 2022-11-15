@@ -14,7 +14,8 @@
 * [Landing Area Part 2](#Landing_area_part_2)
 * [Morse Code Part 1](#Morse_code_part_1)
 * [Morse Code Part 2](#Morse_code_part_2)
-* [Beam](#Beam)
+* [Beam Part 1](#Beam_part_1)
+* [Beam](#Beam_part_2)
 
 &nbsp;
 
@@ -271,7 +272,7 @@ A led must flash the phrase in morse code.
 This assignment was more complicated than the first but it still is a relatively small and simple amount of code. You have to import a bunch of modifiers to help you define the time sleeps inbetween the blinks on the led. In the actual code, you just have to define how long the time sleeps are for each different type of morse code, which should be pretty simple as you already have the modifiers for all of them. 
 &nbsp;
 
-## Beam
+## Beam_part_1
 
 ### Assignment Description
 
@@ -287,8 +288,27 @@ Make a beam and see how much weight it can support before it bends beyond a cert
 
 ### Reflection
 
-We decided on making a modified I beam with a large supporting bottom beam and small, thick tab on the top. We also created further support around the whole that supports the weight so it doesn't snap there, which was one of the main stress points on the simulation. We then continued to strengthen the top by cutting out holes in strong points so we could get the weight down to where it needed to be. 
+We decided on making a modified I beam with a large supporting bottom beam and small, thick tab on the top. We cut out a lot of holes in the bottom support and circles throughout the beam to take weight off so we had more material to work with. We figured that we should make the part around the hole where the weight is supported flat to better support it and not bend the beam one way or another.
 
+&nbsp;
+
+## Beam_part_2
+
+### Assignment Description
+
+Run the beam through a simulator to see where the weak points are.
+
+### Part Link 
+
+[link to the beam in onshape](https://cvilleschools.onshape.com/documents/33575ab88dc8f7928befb042/w/38921909f117f23a72e1cbeb/e/b1f9443dbe8499829a3eab5c?renderMode=0&uiState=6373dab89a584e328ce74f06). 
+
+### Part Image
+
+![Picture of the Beam](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/Beam%20screenshot.PNG) 
+
+### Reflection
+
+The main weak points of the beam were right where it connected to the supporting block, where the support piece on the top ended and near the hole. For the two points on the top of the beam we just cut out more material from the middle and just made the support piece longer and thicker as well as removing some 90 degree edges which were showing up as weak points. For the part near the hole, we made a large slanted support piece coming down from the top of the beam to the flat part near the hole, which solved the problem.
 &nbsp;
 
 ## Media Test
