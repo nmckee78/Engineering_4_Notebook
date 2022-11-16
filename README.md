@@ -16,6 +16,8 @@
 * [Morse Code Part 2](#Morse_code_part_2)
 * [Beam Part 1](#Beam_part_1)
 * [Beam Part 2](#Beam_part_2)
+* [Ring](#Ring)
+* [Key](#Key)
 
 &nbsp;
 
@@ -309,6 +311,47 @@ Run the beam through a simulator to see where the weak points are.
 ### Reflection
 
 The main weak points of the beam were right where it connected to the supporting block, where the support piece on the top ended and near the hole. For the two points on the top of the beam we just cut out more material from the middle and just made the support piece longer and thicker as well as removing some 90 degree edges which were showing up as weak points. For the part near the hole, we made a large slanted support piece coming down from the top of the beam to the flat part near the hole, which solved the problem.
+
+&nbsp;
+
+## Ring
+
+### Assignment Description
+
+Creating a ring part in onshape for the launcher.
+
+### Part Link 
+
+[link to the ring in onshape](https://cvilleschools.onshape.com/documents/de7d1d57a5f209eeb9e1978b/w/286061655ed2639764cdf17a/e/da8a509dd8d0fb351f70a402?renderMode=0&uiState=637528cd5620230f9d075cd1). 
+
+### Part Image
+
+![Picture of the Beam](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/Ring.PNG) 
+
+### Reflection
+
+This part was really easy to start as you just extrude lines you used from the base to create the base of the ring. You then make a circle on the front plane then extrude it so it intersects with the base of the ring. Then you just make some fillets and a small, chamfered cricle on the other side of the ring base to finish. Overall the part was very simple and straightforward to make.
+
+&nbsp;
+
+## Key
+
+### Assignment Description
+
+Create a key that goes through the top for the launcher.
+
+### Part Link 
+
+[link to the key in onshape](https://cvilleschools.onshape.com/documents/de7d1d57a5f209eeb9e1978b/w/286061655ed2639764cdf17a/e/da8a509dd8d0fb351f70a402?renderMode=0&uiState=63752b255620230f9d077a90). 
+
+### Part Image
+
+![Picture of the Beam](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/Key.PNG) 
+
+### Reflection
+
+All this part was is a loop and then a teethed key that attaches to the loop. To create the loop and the non toothed part of the key you just created a new part of a circle and a line jutting out from it then extruded. After this, you just added a linear pattern to quickly add the teeth as well as some chamfers to refine it. Overall it was relatively straightforward assingment to do.
+
 &nbsp;
 
 ## Media Test
