@@ -18,6 +18,7 @@
 * [Beam Part 2](#Beam_part_2)
 * [Ring](#Ring)
 * [Key](#Key)
+* [Assembley](#Assembley)
 
 &nbsp;
 
@@ -351,6 +352,26 @@ Create a key that goes through the top for the launcher.
 ### Reflection
 
 All this part was is a loop and then a teethed key that attaches to the loop. To create the loop and the non toothed part of the key you just created a new part of a circle and a line jutting out from it then extruded. After this, you just added a linear pattern to quickly add the teeth as well as some chamfers to refine it. Overall it was relatively straightforward assingment to do.
+
+&nbsp;
+
+## Assembley
+
+### Assignment Description
+
+Assemble the pull copter
+
+### Part Link 
+
+[link to the assembley in onshape](https://cvilleschools.onshape.com/documents/de7d1d57a5f209eeb9e1978b/w/286061655ed2639764cdf17a/e/63be528840458eccd6262046?renderMode=0&uiState=64135997e7c97716dfdd33ab). 
+
+### Part Image
+
+![Picture of the Assembley](https://github.com/nmckee78/Engineering_4_Notebook/blob/main/images/Assembley.PNG) 
+
+### Reflection
+
+This assembley wasn't that hard as we just had to follow the instructions and it was farily straightforward. It was pretty cool to see how it worked in real time and the animation was really cool. The only difficult part was using the section view to edit it so it could make it work.
 
 &nbsp;
 
